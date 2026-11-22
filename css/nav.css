@@ -1,0 +1,38 @@
+        nav {
+            background-color: black;
+            color: white;
+        }
+        
+        nav a:link  {
+            color:white;
+        }
+        
+        nav a:visited  {
+            color:yellow;
+        }
+        
+        nav a:hover  {
+            color: green;
+            background-color: papayawhip;
+        }
+        
+        nav a:active  {
+            color: red;
+        }
+        
+        nav a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding : 0.5em
+        }
+        
+   /* Format Menu for screen width  > 400px   */     
+    @media screen and (min-width: 400px) {
+        nav ul {
+            display: flex;
+               justify-content: center;
+		            /* All the above added to reduce typing. The last one is used. 
+            Modify the sequence to see the effect. */
+        }
+    }
