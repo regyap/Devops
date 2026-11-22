@@ -3,9 +3,13 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "Packaging application"
-      - git archive --format=zip -o source.zip HEAD
+      - echo "Build started"
+      - ls -la
 
 artifacts:
   files:
-    - source.zip
+    - '**/*'
+  exclude-paths:
+    - '.git/**/*'
+    - '.env'
+    - '.env.*'
